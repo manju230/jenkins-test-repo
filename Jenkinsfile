@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'your-repo-url', branch: "${env.BRANCH_NAME}"
+                git url: 'https://github.com/manju230/jenkins-test-repo.git', branch: "${env.BRANCH_NAME}"
             }
         }
 
